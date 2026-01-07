@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>พยัญชนะและสระภาษาไทย</title>
+
+  <style>
+    body {
+      font-family: "Sarabun", sans-serif;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      margin-top: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+    button {
+      font-size: 32px;
+      padding: 15px;
+      border-radius: 10px;
+      border: none;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e3f2fd;
+    }
+    .vowel button:hover {
+      background-color: #e8f5e9;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>พยัญชนะไทย ก–ฮ</h1>
+<p>กดพยัญชนะเพื่อฟังเสียง</p>
+
+<div class="grid">
+  <button onclick="playSound('ko-kai.mp3')">ก</button>
+  <button onclick="playSound('kho-khai.mp3')">ข</button>
+  <button onclick="playSound('kho-khuat.mp3')">ฃ</button>
+  <button onclick="playSound('kho-khwai.mp3')">ค</button>
+  <button onclick="playSound('kho-khon.mp3')">ฅ</button>
+  <button onclick="playSound('kho-rakhang.mp3')">ฆ</button>
+  <button onclick="playSound('ngo-ngu.mp3')">ง</button>
+  <button onclick="playSound('cho-chan.mp3')">จ</button>
+  <button onclick="playSound('cho-ching.mp3')">ฉ</button>
+
+  <button onclick="playSound('cho-chang.mp3')">ช</button>
+  <button onclick="playSound('so-so.mp3')">ซ</button>
+  <button onclick="playSound('cho-choe.mp3')">ฌ</button>
+  <button onclick="playSound('yo-ying.mp3')">ญ</button>
+  <button onclick="playSound('do-chada.mp3')">ฎ</button>
+  <button onclick="playSound('to-patak.mp3')">ฏ</button>
+
+  <button onclick="playSound('tho-than.mp3')">ฐ</button>
+  <button onclick="playSound('tho-nangmontho.mp3')">ฑ</button>
+  <button onclick="playSound('tho-phuthao.mp3')">ฒ</button>
+  <button onclick="playSound('no-nu.mp3')">ณ</button>
+  <button onclick="playSound('do-dek.mp3')">ด</button>
+  <button onclick="playSound('to-tao.mp3')">ต</button>
+
+  <button onclick="playSound('tho-thung.mp3')">ถ</button>
+  <button onclick="playSound('tho-thahan.mp3')">ท</button>
+  <button onclick="playSound('tho-thong.mp3')">ธ</button>
+  <button onclick="playSound('no-nen.mp3')">น</button>
+  <button onclick="playSound('bo-baimai.mp3')">บ</button>
+  <button onclick="playSound('po-pla.mp3')">ป</button>
+
+  <button onclick="playSound('pho-phueng.mp3')">ผ</button>
+  <button onclick="playSound('fo-fa.mp3')">ฝ</button>
+  <button onclick="playSound('pho-phan.mp3')">พ</button>
+  <button onclick="playSound('fo-fan.mp3')">ฟ</button>
+  <button onclick="playSound('pho-samphao.mp3')">ภ</button>
+  <button onclick="playSound('mo-ma.mp3')">ม</button>
+
+  <button onclick="playSound('yo-yak.mp3')">ย</button>
+  <button onclick="playSound('ro-ruea.mp3')">ร</button>
+  <button onclick="playSound('lo-ling.mp3')">ล</button>
+  <button onclick="playSound('wo-waen.mp3')">ว</button>
+  <button onclick="playSound('so-sala.mp3')">ศ</button>
+  <button onclick="playSound('so-ruesi.mp3')">ษ</button>
+
+  <button onclick="playSound('so-suea.mp3')">ส</button>
+  <button onclick="playSound('ho-hip.mp3')">ห</button>
+  <button onclick="playSound('lo-chula.mp3')">ฬ</button>
+  <button onclick="playSound('o-ang.mp3')">อ</button>
+  <button onclick="playSound('ho-nokhuk.mp3')">ฮ</button>
+</div>
+
+<h1>สระภาษาไทย</h1>
+<p>กดสระเพื่อฟังเสียง</p>
+
+<div class="grid vowel">
+  <button onclick="playSound('sara-a.mp3')">ะ</button>
+  <button onclick="playSound('sara-aa.mp3')">า</button>
+  <button onclick="playSound('sara-i.mp3')">ิ</button>
+  <button onclick="playSound('sara-ii.mp3')">ี</button>
+  <button onclick="playSound('sara-ue.mp3')">ึ</button>
+  <button onclick="playSound('sara-uee.mp3')">ื</button>
+
+  <button onclick="playSound('sara-u.mp3')">ุ</button>
+  <button onclick="playSound('sara-uu.mp3')">ู</button>
+  <button onclick="playSound('sara-e.mp3')">เ</button>
+  <button onclick="playSound('sara-ae.mp3')">แ</button>
+  <button onclick="playSound('sara-o.mp3')">โ</button>
+  <button onclick="playSound('sara-ai-mai-muan.mp3')">ใ</button>
+
+  <button onclick="playSound('sara-ai-mai-malai.mp3')">ไ</button>
+  <button onclick="playSound('sara-am.mp3')">ำ</button>
+  <button onclick="playSound('sara-ao.mp3')">เ◌า</button>
+  <button onclick="playSound('sara-ia.mp3')">เ◌ีย</button>
+  <button onclick="playSound('sara-uea.mp3')">เ◌ือ</button>
+  <button onclick="playSound('sara-ua.mp3')">◌ัว</button>
+</div>
+
+<script>
+function playSound(file) {
+  const audio = new Audio('sound/' + file);
+  audio.play();
+}
+</script>
+<footer>
+<p>
+เสียงประกอบสื่อสร้างโดยใช้บริการสังเคราะห์เสียง Narakeet  
+ใช้เพื่อการศึกษาเท่านั้น
+</p>
+</footer>
+
+</body>
+</html>
