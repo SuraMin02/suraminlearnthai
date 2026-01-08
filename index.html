@@ -41,9 +41,9 @@
 <body>
 
 <h1>พยัญชนะไทย ก–ฮ 
-  Thai consonants and vowels</h1>
+  (Thai consonants and vowels)</h1>
 <p>กดพยัญชนะเพื่อฟังเสียง
-Press the consonant key to listen.</p>
+(Press the consonant key to listen).</p>
 
 <div class="grid">
   <button onclick="playSound('ko-kai.mp3')">ก</button>
@@ -146,11 +146,32 @@ function playSound(file) {
 <footer>
 <p>
 เว็บไซต์นี้ พัฒนาโดย นายเกียรติคุณ เปรมศรี 
-This website was developed by Mr. Kiattikun Premsri.
+(This website was developed by Mr. Kiattikun Premsri.)
 </p>
 </footer>
+<script>
+let consonant = '';
+let vowel = '';
+
+function selectConsonant(c, sound) {
+  consonant = c;
+  playSound(sound);
+}
+
+function selectVowel(v, sound) {
+  vowel = v;
+  document.getElementById("result").innerText = consonant + vowel;
+  playSound(sound);
+}
+
+function playSound(file) {
+  const audio = new Audio('sound/' + file);
+  audio.play();
+}
+</script>
 
 </body>
 </html>
+
 
 
