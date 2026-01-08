@@ -121,6 +121,19 @@
   <button onclick="playSound('sara-uea.mp3')">เ◌ือ</button>
   <button onclick="playSound('sara-ua.mp3')">◌ัว</button>
 </div>
+<h2>ฝึกประสมคำ</h2>
+
+<div>
+  <button onclick="selectConsonant('ก','ko-kai.mp3')">ก</button>
+</div>
+
+<div>
+  <button onclick="selectVowel('า','ka.mp3')">า</button>
+  <button onclick="selectVowel('ิ','ki.mp3')">ิ</button>
+  <button onclick="selectVowel('ุ','ku.mp3')">ุ</button>
+</div>
+
+<p id="result" style="font-size:30px;"></p>
 
 <script>
 function playSound(file) {
@@ -137,3 +150,4 @@ function playSound(file) {
 
 </body>
 </html>
+
